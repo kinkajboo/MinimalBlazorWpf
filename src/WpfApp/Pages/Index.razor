@@ -1,0 +1,18 @@
+﻿@page "/"
+@using BlazorLib
+
+<h3>Hello, world!</h3>
+
+<p>The current count is <strong>@Counter</strong></p>
+
+<button @onclick="IncrementCount">Increment</button>
+
+<Component1></Component1>
+
+@code {
+    int Counter = 0;
+    void IncrementCount()
+    {
+        Counter++;
+    }
+}
